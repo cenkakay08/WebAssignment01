@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Movie Rank</title>
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="index.html">Home Page</a>
+        <a href="movies.html">Movies</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <div class="main">
+        <h1>Movie Rank</h1>
+        <h2>Welcome to our website!</h2>
+        <p>You can read the movie reviews on our website and add your own movie reviews. You can check the scores of the
+            movies. Have fun.</p>
+        <img src="images/index_logo.png" alt="HomePage Movie PNG">
+        <h3>Send your Review!</h3>
+        <div class="formcontainer">
+            <form action="">
+                <label class="nameshead" for="fname">First Name and Last Name</label>
+                <input type="text" class="names" id="fnamelname" name="fnamelname"
+                    placeholder="Your name and surname..">
+
+                <label class="nameshead" for="lname">Movie Title</label>
+                <input type="text" class="names" id="title" name="title" placeholder="Title of movie..">
+                <label class="nameshead" for="score">Review Point</label>
+                <select id="score" class="names" name="score">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label class="ReviewHeader" for="reviewText">Your Review</label>
+                <textarea class="paragraph_text" name="paragraph_text" cols="60" rows="10"
+                    placeholder="Your review.."></textarea>
+                <!-- <input type="text" class="reviewText" id="reviewText" name="reviewText" placeholder="Your review.."> -->
+                <div class="containerradiobutton">
+
+                    <label class="nameshead" for="gender">Select your Gender</label>
+
+
+                    <li>
+                        <input type="radio" id="f-option" name="selector">
+                        <label for="f-option">Female</label>
+
+                        <div class="check"></div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="s-option" name="selector">
+                        <label for="s-option">Male</label>
+
+                        <div class="check">
+                            <div class="inside"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="t-option" name="selector">
+                        <label for="t-option">Other</label>
+
+                        <div class="check">
+                            <div class="inside"></div>
+                        </div>
+                    </li>
+
+                </div>
+                <label class="SpoilerHead" for="SpoilerHead">Does your review contain spoilers? If so, please check the
+                    box.</label>
+                <label class="container">
+                    <input type="checkbox" name="spoilercheck" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <input type="submit" class="submitButton" value="Submit">
+            </form>
+        </div>
+        <button class="button-one" onclick="myFunction()">Alert Button</button>
+        <div id="assignmentone">Assignment One!!!!!</div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+<script>
+    function myFunction() {
+        alert("Alert in assignment one!");
+    }
+</script>
